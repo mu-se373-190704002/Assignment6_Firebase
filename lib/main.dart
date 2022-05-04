@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }
@@ -78,16 +79,16 @@ class _LoginScreenState extends State<LoginScreen> {
     TextEditingController _emailController = TextEditingController();
     TextEditingController _passwordController = TextEditingController();
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(14.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children:  [
           const Text(
-            "My App Title",
+            "Assignment 6",
             style: TextStyle(
             color: Colors.black87,
-            fontSize:28.0,
+            fontSize:20.0,
             fontWeight: FontWeight.bold,
            ),
           ),
@@ -95,12 +96,12 @@ class _LoginScreenState extends State<LoginScreen> {
             "Login to Your App",
             style: TextStyle(
               color: Colors.black87,
-              fontSize: 44.0,
+              fontSize: 30.0,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(
-            height: 44.0,
+            height: 30.0,
           ),
           TextField(
             controller: _emailController,
@@ -111,7 +112,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
           const SizedBox(
-            height: 26.0,
+            height: 20.0,
           ),
           TextField(
             controller: _passwordController,
@@ -122,7 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
           const SizedBox(
-            height: 18.0,
+            height: 15.0,
           ),
           const Text(
             "Don't Remember your Password?",
@@ -131,7 +132,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
           const SizedBox(
-            height: 88.0,
+            height: 60.0,
           ),
           Container(
             width: double.infinity,
